@@ -6,18 +6,23 @@
 
   --bg: #fff;
   --fg: #333;
+  --hero-point-bg: #ffc778;
+  --hero-hover-fg: #f8a024;
   --accents-1: #0070f3;
   --accents-2: #3291ff;
   --accents-3: #666;
   --geist-foreground: #000;
   --geist-success: #690;
 
+  --bg-cleanness: rgba(88, 73, 51, 0.6);
+  --fg-cleanness: rgb(255, 255, 255);
   --radius: 4px;
 
   --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  --font-mono: SFMono-Regular, Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace;
+  --font-mono: SFMono-Regular, Menlo, Consolas, 'PT Mono', 'Liberation Mono',
+    Courier, monospace;
 }
 
 * {
@@ -124,7 +129,8 @@ p {
   font-size: 1rem;
   line-height: 1.8rem;
 }
-ul, ol {
+ul,
+ol {
   margin: 0;
   padding-inline-start: 1.5rem;
   color: #222;
