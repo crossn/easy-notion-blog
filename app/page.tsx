@@ -97,51 +97,46 @@ const RootPage = () => (
                   gap: '2rem',
                 }}
               >
-                <div className={styles.galleryCard}>
+                <div className={styles.galleryCard} style={{ width: '100%' }}>
                   <div
                     style={{
                       backgroundColor: '#dfdddd',
-                      width: '1100px',
                       height: '368px',
                     }}
                   ></div>
                   <p>テキストテキスト</p>
                 </div>
-                <div className={styles.galleryCard}>
+                <div className={styles.galleryCard} style={{ width: '45%' }}>
                   <div
                     style={{
                       backgroundColor: '#dfdddd',
-                      width: '500px',
                       height: '390px',
                     }}
                   ></div>
                   <p>テキストテキスト</p>
                 </div>
-                <div className={styles.galleryCard}>
+                <div className={styles.galleryCard} style={{ width: '45%' }}>
                   <div
                     style={{
                       backgroundColor: '#dfdddd',
-                      width: '500px',
                       height: '390px',
                     }}
                   ></div>
                   <p>テキストテキスト</p>
                 </div>
-                <div className={styles.galleryCard}>
+                <div className={styles.galleryCard} style={{ width: '45%' }}>
                   <div
                     style={{
                       backgroundColor: '#dfdddd',
-                      width: '500px',
                       height: '390px',
                     }}
                   ></div>
                   <p>テキストテキスト</p>
                 </div>
-                <div className={styles.galleryCard}>
+                <div className={styles.galleryCard} style={{ width: '45%' }}>
                   <div
                     style={{
                       backgroundColor: '#dfdddd',
-                      width: '500px',
                       height: '390px',
                     }}
                   ></div>
@@ -159,9 +154,9 @@ const RootPage = () => (
                 width: '40%',
               }}
             ></div>
-            <div style={{ width: '60%' }}>
+            <div style={{ width: '60%', textAlign: 'left' }}>
               <h3>About</h3>
-              <p style={{ textAlign: 'left' }}>
+              <p>
                 テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
               </p>
             </div>
