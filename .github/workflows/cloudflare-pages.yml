@@ -18,7 +18,7 @@ jobs:
         with:
           node-version: '18.x'
       - name: Install dependencies
-        run: node scripts/set-blog-index-cache.js && next build && node scripts/expire-blog-index-cache.js
+        run: yarn
 
       - name: Publish to Cloudflare Pages
         id: cloudflare_pages_deploy
