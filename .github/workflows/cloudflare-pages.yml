@@ -18,7 +18,7 @@ jobs:
         with:
           node-version: '18.x'
       - name: Install dependencies
-        run: yarn
+        run: node scripts/set-blog-index-cache.js && next build && node scripts/expire-blog-index-cache.js
 
       - name: Publish to Cloudflare Pages
         id: cloudflare_pages_deploy
@@ -27,7 +27,7 @@ jobs:
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           projectName: cloudflare-pages-with-github-actions-prac
-          directory: ./public
+          directory: ./dist
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Add publish URL as commit status
